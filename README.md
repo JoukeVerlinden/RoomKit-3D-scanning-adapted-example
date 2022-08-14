@@ -6,7 +6,7 @@ Highlight physical structures and display text that guides a user to scan the sh
 ## Overview
 
 - Note: This adapted sample code project is associated with WWDC22 session [10127: Create parametric 3D room scans with RoomPlan](https://developer.apple.com/wwdc22/10127).
-- Note 2: there are some adaptations due to the incorrect behaviour 
+- Note: Furthermore, there are some adaptations due to the incorrect behaviour of iOS 14 since beta 4
 
 ## Configure the sample code project
 
