@@ -1,10 +1,12 @@
 # Create a 3D model of an interior room by guiding the user through an AR experience
 
-Highlight physical structures and display text that guides a user to scan the shape of their physical environment using a framework-provided view.
+Highlight physical structures and display text that guides a user to scan the shape of their physical environment using a framework-provided view. Addition from Jouke: To augment the scanning experience, it displays object category and provides auditory feedback.
+
 
 ## Overview
 
-- Note: This sample code project is associated with WWDC22 session [10127: Create parametric 3D room scans with RoomPlan](https://developer.apple.com/wwdc22/10127).
+- Note: This adapted sample code project is associated with WWDC22 session [10127: Create parametric 3D room scans with RoomPlan](https://developer.apple.com/wwdc22/10127).
+- Note 2: there are some adaptations due to the incorrect behaviour 
 
 ## Configure the sample code project
 
