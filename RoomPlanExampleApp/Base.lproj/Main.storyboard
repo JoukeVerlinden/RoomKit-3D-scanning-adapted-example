@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21157" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdR-sG-hoR">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21208.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdR-sG-hoR">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21151.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21191"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,31 +13,31 @@
             <objects>
                 <viewController storyboardIdentifier="OnboardingViewController" id="qdR-sG-hoR" customClass="OnboardingViewController" customModule="RoomPlanExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yBf-P1-2uZ">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pk-tu-CeD">
-                                <rect key="frame" x="40" y="230" width="348" height="152.33333333333337"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pk-tu-CeD">
+                                <rect key="frame" x="39" y="282" width="310" height="174.33333333333337"/>
                                 <string key="text">To scan your room, point your device at all the walls, windows, doors and furniture in your space until your scan is complete.
 
 You can see a preview of your scan at the bottom of the screen so you can make sure your scan is correct. </string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RoomPlan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDs-He-YN5">
-                                <rect key="frame" x="133.66666666666669" y="174" width="160.66666666666669" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RoomPlan 3D scan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDs-He-YN5">
+                                <rect key="frame" x="46" y="233" width="297" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="r5J-Dx-sgl">
-                                <rect key="frame" x="114" y="809" width="200" height="50"/>
+                                <rect key="frame" x="95" y="727" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QUA-Ca-Q71"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="sD5-cO-lCf"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Start Scanning" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="Start Scan" cornerStyle="capsule">
                                     <backgroundConfiguration key="background"/>
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
                                 </buttonConfiguration>
@@ -45,9 +45,18 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                                     <action selector="startScan:" destination="qdR-sG-hoR" eventType="touchUpInside" id="ffE-j3-IOw"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Universiteit_Antwerpen_nieuw_logo.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Io-Wu-zu4">
+                                <rect key="frame" x="16" y="23" width="334" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon180 copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="DCK-Jo-9yi">
+                                <rect key="frame" x="28" y="490" width="334" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Fz-hG-eHB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
                         <constraints>
                             <constraint firstItem="7pk-tu-CeD" firstAttribute="leading" secondItem="yBf-P1-2uZ" secondAttribute="leading" constant="40" id="5Ff-Ks-CH2"/>
                             <constraint firstItem="7pk-tu-CeD" firstAttribute="centerX" secondItem="yBf-P1-2uZ" secondAttribute="centerX" id="IgI-hg-NjN"/>
@@ -62,18 +71,18 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mnn-iT-DWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1593" y="133"/>
+            <point key="canvasLocation" x="-1595.3846153846152" y="132.22748815165878"/>
         </scene>
         <!--Room Capture View Controller-->
         <scene sceneID="aNf-ca-iLV">
             <objects>
                 <viewController storyboardIdentifier="RoomCaptureViewController" id="ocJ-nv-BaW" customClass="RoomCaptureViewController" customModule="RoomPlanExampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nWS-xs-VtG">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="OzX-Pp-2Ee">
-                                <rect key="frame" x="139" y="793" width="150" height="50"/>
+                                <rect key="frame" x="120" y="711" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="210-sX-00Y"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="LXe-u0-xIL"/>
@@ -88,6 +97,10 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                                     <action selector="exportResults:" destination="ocJ-nv-BaW" eventType="touchUpInside" id="gF2-ar-BXi"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UA logo small.png" translatesAutoresizingMaskIntoConstraints="NO" id="R9T-LN-AC1">
+                                <rect key="frame" x="0.0" y="737" width="99" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WOl-ED-SbL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,14 +131,14 @@ You can see a preview of your scan at the bottom of the screen so you can make s
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4N-9i-teE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49" y="133"/>
+            <point key="canvasLocation" x="-49.230769230769226" y="132.93838862559241"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YP9-Cy-YAh">
             <objects>
                 <navigationController storyboardIdentifier="RoomCaptureViewNavigationController" id="Yp7-tC-qnz" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yOQ-qe-dy1">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -138,11 +151,20 @@ You can see a preview of your scan at the bottom of the screen so you can make s
         </scene>
     </scenes>
     <resources>
+        <image name="UA logo small.png" width="331" height="331"/>
+        <image name="Universiteit_Antwerpen_nieuw_logo.svg.png" width="1200" height="402"/>
+        <image name="icon180 copy.png" width="90" height="90"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
