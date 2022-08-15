@@ -1,8 +1,7 @@
 # Create a 3D model of an interior room by guiding the user through an AR experience
-Adapted example of Roomkit, shows labels for objects and provides auditory feedback
-Highlight physical structures and display text that guides a user to scan the shape of their physical environment using a framework-provided view. Addition from Jouke: To augment the scanning experience, it displays object category and provides auditory feedback.
+Adapted example of Roomkit: to augment the scanning experience, it shows labels for object category and provides auditory feedback.
 
-Highlight physical structures and display text that guides a user to scan the shape of their physical environment using a framework-provided view. Addition from Jouke: To augment the scanning experience, it displays object category and provides auditory feedback.
+Highlight physical structures and display text that guides a user to scan the shape of their physical environment using a framework-provided view. 
 
 
 ## Overview
